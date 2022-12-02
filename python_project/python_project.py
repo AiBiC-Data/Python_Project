@@ -28,5 +28,5 @@ while 1 :
     find_des(**keyword_dict)
 
     with open('text.txt','w') as file:
-        file.write('{0} - {1}'.format(start_point, end_point))
+        file.write('{0} - {1}\n'.format(start_point, end_point))
 '''
