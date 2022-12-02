@@ -5,6 +5,7 @@ strt_list = ["나빌레관", "서호관", "5호관", "2호관", "60주년",
 
 def print_start():
     start = input("출발지를 입력해주세요(정문 or 후문): ")
+    #start=start.strip()
     if start not in ["정문", "후문"]:
         print("입력이 잘못 되었습니다. 종료합니다.")
         exit()
@@ -21,6 +22,7 @@ def print_strt_list():
 
 def print_end():
     end = input("도착지를 선택해주세요: ")
+    #start=end.strip()
     if end not in strt_list:
         print("입력이 잘못 되었습니다. 종료합니다.")
         exit()
