@@ -15,3 +15,18 @@ set_f = SetApt()  # 초기 건물 그리기 / setting.py의 setApt 클래스
 keyword_dict = {'start': start_point, 'end': end_point}
 # 출발지에서 목적지까지 이동하는 터틀 그리기(키워드 인수와 딕셔너리 언패킹을 사용해 출발지와 목적지 매개변수 전달)
 find_des(**keyword_dict)
+'''
+while 1 :
+    start_point = print_start()
+    if start_point not in ['정문','후문']:
+        break;
+    print_strt_list()  # 도착지 목록 출력
+    end_point = print_end()  # 도착지 입력
+    set_f = SetApt()  # 초기 건물 그리기 / setting.py의 setApt 클래스
+    keyword_dict = {'start': start_point, 'end': end_point}
+    # 출발지에서 목적지까지 이동하는 터틀 그리기(키워드 인수와 딕셔너리 언패킹을 사용해 출발지와 목적지 매개변수 전달)
+    find_des(**keyword_dict)
+
+    with open('text.txt','w') as file:
+        file.write('{0} - {1}'.format(start_point, end_point))
+'''
